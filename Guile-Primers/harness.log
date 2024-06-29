@@ -1,0 +1,22 @@
+%%%% Starting test harness
+Group begin: harness
+Test begin:
+  test-name: "test-hello"
+  source-file: "hello-test.scm"
+  source-line: 6
+  source-form: (test-equal "test-hello" "Hello World\n" (hi))
+Test end:
+  result-kind: pass
+  actual-value: "Hello World\n"
+  expected-value: "Hello World\n"
+Test begin:
+  test-name: "test-named-hello"
+  source-file: "hello-test.scm"
+  source-line: 10
+  source-form: (test-equal "test-named-hello" "Hello John\n" (hi "Jonh"))
+Test end:
+  result-kind: pass
+  actual-value: "Hello John\n"
+  expected-value: "Hello John\n"
+Group end: harness
+# of expected passes      2
