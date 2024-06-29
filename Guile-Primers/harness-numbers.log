@@ -1,0 +1,22 @@
+%%%% Starting test harness-numbers
+Group begin: harness-numbers
+Test begin:
+  test-name: "add-zero-zero"
+  source-file: "numbers-test.scm"
+  source-line: 8
+  source-form: (test-equal "add-zero-zero" NEUTRAL_ELEMENT (integer-add NEUTRAL_ELEMENT NEUTRAL_ELEMENT))
+Test end:
+  result-kind: pass
+  actual-value: 0
+  expected-value: 0
+Test begin:
+  test-name: "add-one-zero"
+  source-file: "numbers-test.scm"
+  source-line: 12
+  source-form: (test-equal "add-one-zero" DUMMY_NON_NEUTRAL_VALUE (integer-add DUMMY_NON_NEUTRAL_VALUE NEUTRAL_ELEMENT))
+Test end:
+  result-kind: pass
+  actual-value: 1
+  expected-value: 1
+Group end: harness-numbers
+# of expected passes      2

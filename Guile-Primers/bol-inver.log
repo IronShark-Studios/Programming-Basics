@@ -1,0 +1,22 @@
+%%%% Starting test bol-inver
+Group begin: bol-inver
+Test begin:
+  test-name: "true-inverted-returns-false"
+  source-file: "booleans-test.scm"
+  source-line: 6
+  source-form: (test-equal "true-inverted-returns-false" #f (boolean-invert #t))
+Test end:
+  result-kind: pass
+  actual-value: #f
+  expected-value: #f
+Test begin:
+  test-name: "fales-inverted-returns-true"
+  source-file: "booleans-test.scm"
+  source-line: 10
+  source-form: (test-equal "fales-inverted-returns-true" #t (boolean-invert #f))
+Test end:
+  result-kind: pass
+  actual-value: #t
+  expected-value: #t
+Group end: bol-inver
+# of expected passes      2
